@@ -125,6 +125,45 @@ void render(void) {
     	persegi(90, 0.05f, 1.f, 14.2f, 2.2f);
     	persegi(90, 0.05f, 1.f, 14.2f, 3.2f);
     	lingkaran(1.9f, 14.2f, -2.8f);
+    //KAKI
+    	//kaki kanan
+    	glColor3f(0.0f, 0.85f, 0.0f);
+    	persegi(90, 1.f, 1.f, 5.f, -6.f);
+    	persegi(90, 1.f, 1.f, 5.f, -7.5f);
+    	persegi(90, 1.f, 1.f, 5.f, -9.f);
+    	persegi(90, 1.f, 1.f, 5.f, -10.5f);
+    	persegi(90, 1.f, 1.f, 5.f, -12.f);
+    	persegi(90, 1.f, 1.f, 5.f, -13.5f);
+    	//strip di kaki kanan
+    	glColor3f(1.0f, 0.85f, 0.0f);
+    	persegi(90, 0.05f, 1.f, 5.f, -7.f);
+    	persegi(90, 0.05f, 1.f, 5.f, -8.5f);
+    	persegi(90, 0.05f, 1.f, 5.f, -10.f);
+    	persegi(90, 0.05f, 1.f, 5.f, -11.5f);
+    	persegi(90, 0.05f, 1.f, 5.f, -13.f);
+    	persegi(90, 0.05f, 1.f, 5.f, -14.5f);
+
+    	glColor3f(0.0f, 0.85f, 0.0f);
+    	persegi(90, 1.f, 2.5f, 6.4f, -15.6f);
+    	//kaki kiri
+    	glColor3f(0.0f, 0.85f, 0.0f);
+    	persegi(90, 1.f, 1.f, -5.f, -6.f);
+    	persegi(90, 1.f, 1.f, -5.f, -7.5f);
+    	persegi(90, 1.f, 1.f, -5.f, -9.f);
+    	persegi(90, 1.f, 1.f, -5.f, -10.5f);
+    	persegi(90, 1.f, 1.f, -5.f, -12.f);
+    	persegi(90, 1.f, 1.f, -5.f, -13.5f);
+    	//strip di kaki kiri
+    	glColor3f(1.0f, 0.85f, 0.0f);
+    	persegi(90, 0.05f, 1.f, -5.f, -7.f);
+    	persegi(90, 0.05f, 1.f, -5.f, -8.5f);
+    	persegi(90, 0.05f, 1.f, -5.f, -10.f);
+    	persegi(90, 0.05f, 1.f, -5.f, -11.5f);
+    	persegi(90, 0.05f, 1.f, -5.f, -13.f);
+    	persegi(90, 0.05f, 1.f, -5.f, -14.5f);
+
+    	glColor3f(0.0f, 0.85f, 0.0f);
+    	persegi(90, 1.f, 2.5f, -6.4f, -15.6f);
     glFlush();
 }
 
