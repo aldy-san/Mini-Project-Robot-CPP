@@ -5,13 +5,9 @@ void persegi(float angle,float p, float l, float posX, float posY) {
 	glTranslatef(posX, posY, 0.0f);
 	glRotatef(angle, 0.0f, 0.0f, 1.0f);
 	glBegin(GL_QUADS);
-	glColor3f(1.0f, 0.0f, 0.0);
     glVertex2f(p, l);
-	glColor3f(1.0f, 1.0f, 0.0);
     glVertex2f(-p, l);
-	glColor3f(1.0f, 0.0f, 1.0);
     glVertex2f(-p, -l);
-	glColor3f(0.0f, 0.0f, 1.0);
     glVertex2f(p,-l);
     glEnd();
     glRotatef(-angle, 0.0f, 0.0f, 1.0f);
@@ -19,8 +15,7 @@ void persegi(float angle,float p, float l, float posX, float posY) {
 }
 void render(void) {
     glClear(GL_COLOR_BUFFER_BIT);
-    //isi disini
-    
+    persegi(0, 3.5f, 1.4f, -12.5f, 7.0f);
     glFlush();
 }
 
