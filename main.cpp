@@ -3,6 +3,17 @@
 #include <Math.h>
 #define PI 3.14159265f
 
+void segitiga(float angle, float origin, float p, float q, float r, float posX, float posY) {
+	glTranslatef(posX, posY, 0.0f);
+	glRotatef(angle, 0.0f, 0.0f, 1.0f);
+	glBegin(GL_TRIANGLES);
+    glVertex2f(origin, p);
+    glVertex2f(origin, q);
+    glVertex2f(origin, r);
+    glEnd();
+    glRotatef(-angle, 0.0f, 0.0f, 1.0f);
+    glTranslatef(-posX, -posY, 0.0f);
+}
 void persegi(float angle,float p, float l, float posX, float posY) {
 	glTranslatef(posX, posY, 0.0f);
 	glRotatef(angle, 0.0f, 0.0f, 1.0f);
@@ -80,6 +91,22 @@ void render(void) {
 	    glColor3f(0.0f, 0.7f, 0.0f);
 	    persegi(0, 7.f, 5.f, 0.0f, 0.f);
 	    //taruh isi badannya disini
+	    //border
+	    glColor3f(0.5f, 1.0f, 0.5f);
+	    persegi(0, 2.f, 2.f, 4.f, 2.f);
+	    //fill
+	    glColor3f(0.2f, 1.0f, 0.1f);
+	    persegi(0, 1.5f, 1.5f, 4.f, 2.f);
+	    //konten
+	    glColor3f(0.8f, 1.0f, 0.1f);
+	    lingkaran(0.5f, 3.7f, 2.5f);
+	    glColor3f(1.f, 0.0f, 0.1f);
+	    persegi(90, 0.5f, 0.1f, 4.5f, 2.5f);
+	    persegi(90, 0.5f, 0.1f, 4.8f, 2.5f);
+	    persegi(90, 0.5f, 0.5f, -4.f, 2.5f);
+	    persegi(90, 0.5f, 0.5f, -4.f, 1.3f);
+	    persegi(90, 0.5f, 0.5f, -2.7f, 2.5f);
+	    persegi(90, 0.5f, 0.5f, -2.7f, 1.3f);
 	//TANGAN
 		//lengan kiri
 		glColor3f(0.0f, 0.85f, 0.0f);
